@@ -1,0 +1,27 @@
+body { background: #eee }
+
+.container-fluid { 
+	max-width: 1200px; 
+	margin-top: 1em;
+}
+
+.card {
+	background: #fff;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	margin-bottom: 1em;
+}
+
+[class*="row"] {
+	margin-bottom: 1em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        	justify-content: center;
+}
+
+.card-col {
+	padding-left: 0em;
+}
+
+.card-row {
+	padding-left: 1em;
+}
