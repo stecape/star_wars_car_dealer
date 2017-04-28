@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/scope.css">
 
     <title>Sketch</title>
   </head>
@@ -26,48 +26,58 @@
           <li class="nav-item">
             <a class="nav-link" href="trend.html">Trend</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Layout<span class="sr-only">(current)</span></a>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="scope.html">Scope</a>
+            <a class="nav-link" href="layout.html">Layout</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Scope<span class="sr-only">(current)</span></a>
           </li>
         </ul>
       </div>
     </nav>
-    
+
     <div class="container-fluid">
-      <div class="row">
-        <div class="card-deck w-100">
-          <div class="card card-inverse">
-            <img class="card-img card-img-fit" src="src/pic1.jpg" alt="Card image cap">
-            <div class="card-img-overlay">
-              <h4 class="card-title">X-Wings</h4>
-              <p class="card-text">Specifications, colors and optionals</p>
+      <div class="row card-row">
+
+        <div class="col-xl-12 card-col">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Force Balancing</h3>
             </div>
-          </div>
-          <div class="card card-inverse">
-            <img class="card-img card-img-fit" src="src/pic2.jpg" alt="Card image cap">
-            <div class="card-img-overlay">
-              <h4 class="card-title">Rebel Alliance</h4>
-              <p class="card-text">Specifications, colors and optionals</p>
+            <div class="card-block" id="force">
+              <h4 class="card-title">The prophecy of the Chosen One</h4>
+              <p class="card-text">The prophecy of the Chosen One was a Jedi legend that foretold the coming of a being who would destroy the Sith and restore balance to the Force.</p>
             </div>
-          </div>
-          <div class="card card-inverse">
-            <img class="card-img card-img-fit" src="src/pic3.jpg" alt="Card image cap">
-            <div class="card-img-overlay">
-              <h4 class="card-title">Millennium Falcon</h4>
-              <p class="card-text">Specifications, colors and optionals</p>
-            </div>
-          </div>
-          <div class="card card-inverse">
-            <img class="card-img" src="src/pic4.jpg" alt="Card image cap">
-            <div class="card-img-overlay">
-              <h4 class="card-title">Tie Fighter</h4>
-              <p class="card-text">Specifications, colors and optionals</p>
+            <div id="force-chart"></div>
+            <div class="card-block" id="force">
+              <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Faction</th>
+                    <th>Color</th>
+                    <th>Population Average</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Sith</td>
+                    <td class="green">Green</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jedi</td>
+                    <td class="red">Red</td>
+                    <td>7</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
+        
       </div>
     </div>
 
@@ -75,5 +85,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js" crossorigin="anonymous"></script>
+    <script src="http://localhost/js/scope.js" crossorigin="anonymous"></script>
   </body>
 </html>

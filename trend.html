@@ -29,36 +29,55 @@
           <li class="nav-item">
             <a class="nav-link" href="layout.html">Layout</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="scope.html">Scope</a>
+          </li>
         </ul>
       </div>
     </nav>
 
     <div class="container-fluid">
       <div class="row card-row">
+
         <div class="col-xl-6 card-col">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Imperial Army</h3>
+              <h3 class="card-title">Dark Side</h3>
             </div>
             <div class="card-block" id="empire">
-              <h4 class="card-title">Storm Troopers regiments through the years</h4>
-              <p class="card-text">Year by year storm troopers trend, considering defections, new units hiring and betrayals.</p>
+              <h4 class="card-title">Sith warriors trained year by year</h4>
+              <p class="card-text">The Sith, collectively known as the Sith Order, was an ancient, monastic warmongering organization of Force users, unified by its belief and observance of the dark side of the Force in an effort to gain power over the galaxy. The Sith were the ancient enemies of the Jedi Order and fought numerous wars with them for thousands of years.</p>
             </div>
             <div id="empire-chart"></div>
           </div>
         </div>
+
         <div class="col-xl-6 card-col">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Rebellion Army</h3>
+              <h3 class="card-title">Light Side</h3>
             </div>
             <div class="card-block" id="rebellion">
-              <h4 class="card-title">X-Wing pilots through the years</h4>
-              <p class="card-text">Year by year X-Wing pilots trend, considering defections, new units hiring and crashes.</p>
+              <h4 class="card-title">Jedi knights born through the years</h4>
+              <p class="card-text">The Jedi Order was an ancient, monastic peacekeeping organization united in their observance of the Force, specifically the light side. A noble order of protectors noted for their lightsabers and ability to tap into the power of the Force, the Jedi served as guardians of peace and justice in the Galactic Republic for over a thousand generations.</p>
             </div>
             <div id="rebellion-chart"></div>
           </div>
         </div>
+
+        <div class="col-xl-12 card-col">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Force Balancing</h3>
+            </div>
+            <div class="card-block" id="force">
+              <h4 class="card-title">The prophecy of the Chosen One</h4>
+              <p class="card-text">The prophecy of the Chosen One was a Jedi legend that foretold the coming of a being who would destroy the Sith and restore balance to the Force.</p>
+            </div>
+            <div id="force-chart"></div>
+          </div>
+        </div>
+        
       </div>
     </div>
 
@@ -67,6 +86,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="https://d3js.org/d3.v4.min.js" crossorigin="anonymous"></script>
+    <script src="http://localhost/js/trend-empire.js" crossorigin="anonymous"></script>
+    <script src="http://localhost/js/trend-rebellion.js" crossorigin="anonymous"></script>
     <script src="http://localhost/js/trend.js" crossorigin="anonymous"></script>
   </body>
 </html>
